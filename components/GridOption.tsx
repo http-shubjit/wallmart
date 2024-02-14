@@ -5,7 +5,7 @@ import "../app/globals.css";
 type Props = {
   title: string;
   className?: string;
-  image?: string;
+  image?: any;
 };
 function GridOption({ title, image, className }: Props) {
   return (

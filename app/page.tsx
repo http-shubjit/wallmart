@@ -1,20 +1,27 @@
 import Image from "next/image";
 import GridOption from "../components/GridOption";
-
+import pex from "../public/pex.webp";
+import wardbord from "../public/wordbode.jpg";
+import any from "../public/any.webp";
+import fd from "../public/fd.jpg";
 export default function Home() {
   return (
-    <main className="">
+    <main className="flex-1">
       <div className="grid grid-cols-1 grid-flow-row-dense md:grid-cols-4 gap-6 m-6">
         <GridOption
           title="Sweet Gifts For Less"
-          image="http://links.papareact.com/1dy"
-          className="bg-pink-200 h-full md:h-auto"
+          image={pex}
+          className="bg-pink-200 h-full md:h-32"
         />
-
+        <GridOption
+          title="Shop Wardrobe"
+          image={wardbord}
+          className="bg-blue-100 col-span-2 row-span-2"
+        />
         <GridOption
           title="Shop Home"
           image="http://links.papareact.com/szu"
-          className="bg-blue-100 col-span-2 row-span-2"
+          className="bg-pink-200 row-span-2"
         />
         <GridOption
           title="Shop Electronics"
@@ -25,6 +32,12 @@ export default function Home() {
           title="Shop toys"
           image="http://links.papareact.com/pj2"
           className="bg-green-100 h-60 col-span-2"
+        />
+
+        <GridOption
+          title="Shop toys"
+          image={any}
+          className="bg-red-100 col-span-2 row-span-2"
         />
 
         <GridOption
@@ -46,6 +59,11 @@ export default function Home() {
           title="Enjoy Free Shiping"
           image="http://links.papareact.com/9fh"
           className="bg-rose-100 h-64"
+        />
+        <GridOption
+          title="Flash Deals"
+          image={fd}
+          className="bg-orange-200 h-64 col-span-2"
         />
       </div>
     </main>
